@@ -1,26 +1,17 @@
 import React from "react";
 import Products from "./Components/Products";
 
-import MyButton from "./Components/Button";
-import MyHeader from "./Components/MyHeader";
-import ReactNavbar from "./Components/ReactNavbar";
-import Footer from "./Components/Footer";
+import MyHeader from "./Components/Header/MyHeader";
+import ReactNavbar from "./Components/Navbar/ReactNavbar";
+import Footer from "./Components/Footer/Footer";
+import Music from "./Components/Music/Music";
 function App() {
   return (
     <>
       <div>
         <ReactNavbar />
         <MyHeader></MyHeader>
-        <h2
-          style={{
-            textAlign: "center",
-            fontWeight: "bold",
-            fontFamily: "Metal Mania",
-            paddingTop: 5,
-          }}
-        >
-          Music
-        </h2>
+        <Music></Music>
         <Products></Products>
         <Footer></Footer>
       </div>
